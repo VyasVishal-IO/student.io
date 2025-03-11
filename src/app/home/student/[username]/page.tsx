@@ -639,6 +639,8 @@ export default function StudentProfilePage() {
                 Projects
 
                 
+
+
               </TabsTrigger>
               <TabsTrigger 
                 value="notes"
