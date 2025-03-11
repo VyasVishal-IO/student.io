@@ -637,6 +637,8 @@ export default function StudentProfilePage() {
                 className="data-[state=active]:bg-white rounded-none border-b-2 border-transparent data-[state=active]:border-black"
               >
                 Projects
+
+                
               </TabsTrigger>
               <TabsTrigger 
                 value="notes"
