@@ -638,7 +638,11 @@ export default function StudentProfilePage() {
               >
                 Projects
 
-                
+
+
+
+
+
 
 
               </TabsTrigger>
@@ -671,6 +675,7 @@ export default function StudentProfilePage() {
               </div>
             </TabsContent>
           </Tabs>
+          
         </div>
       </div>
 

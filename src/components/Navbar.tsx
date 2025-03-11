@@ -6,15 +6,17 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Home, Search, User, Plus, Briefcase } from 'lucide-react';
+import { useAuth } from '@/context/AuthContext';
 
 const Navbar = () => {
   const pathname = usePathname();
+  const profile = useAuth();
   
   const navItems = [
     { name: 'Home', href: '/home', icon: Home },
     { name: 'Explore', href: '/explore', icon: Search },
     { name: 'Project', href: '/projectPage', icon: Briefcase },
-    { name: 'Profile', href: '/profile', icon: User },
+    { name: 'Profile', href: `/home/${profile.role}/${profile.username}`, icon: User },
   ];
 
   return (
