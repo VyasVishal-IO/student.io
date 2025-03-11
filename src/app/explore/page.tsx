@@ -258,6 +258,7 @@ import {
 import PostCard from '@/components/content/PostCard';
 import ProjectCard from '@/components/content/ProjectCard';
 import EventCard from '@/components/content/EventCard';
+import Navbar from '@/components/Navbar';
 
 type ContentItem = any;
 type ContentType = 'all' | 'posts' | 'projects' | 'events';
@@ -893,6 +894,12 @@ export default function ExplorePage() {
           )}
         </div>
       </div>
+
+
+
+
+            <div className="h-18"></div>
+      <Navbar />
     </div>
   );
 }

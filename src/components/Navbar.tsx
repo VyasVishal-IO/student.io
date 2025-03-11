@@ -14,7 +14,7 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", href: "/Dashboard", icon: Home },
     { name: "Explore", href: "/explore", icon: Search },
-    { name: "Project", href: "/projectPage", icon: Briefcase },
+    { name: "Project", href: "/projects", icon: Briefcase },
     {
       name: "Profile",
       href: `/home/${profile?.role}/${profile?.username}`,

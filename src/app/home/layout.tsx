@@ -880,7 +880,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
                   icon={FolderPlus} 
                   message="You haven't created any projects yet" 
                   actionLabel="Create your first project"
-                  actionHref="/projects/new"
+                  actionHref="/create/project"
                 />
               )}
             </TabsContent>
@@ -901,7 +901,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
                   icon={Layers} 
                   message="You haven't joined any projects yet" 
                   actionLabel="Explore projects"
-                  actionHref="/projects/explore"
+                  actionHref="/projects"
                 />
               )}
             </TabsContent>

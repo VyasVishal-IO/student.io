@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { collection, query, orderBy, onSnapshot } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import ProjectCard from '@/components/content/ProjectCard';
+import Navbar from '@/components/Navbar';
 
 export default function AllProjectsPage() {
   const [projects, setProjects] = useState<any[]>([]);
@@ -25,6 +26,9 @@ export default function AllProjectsPage() {
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
+
+      <div className="h-18"></div>
+      <Navbar />
     </div>
   );
 }
