@@ -366,6 +366,8 @@ import { auth, db } from '@/lib/firebase';
 import { collection, query, where, getDocs, onSnapshot, arrayUnion, arrayRemove, runTransaction, doc } from 'firebase/firestore';
 import toast, { Toaster } from 'react-hot-toast';
 import { FiUserCheck, FiUserPlus } from 'react-icons/fi';
+import JoinedCollegesSection from '@/components/college/JoinedCollegesSection';
+
 
 export default function StudentProfilePage() {
   const { profile } = useAuth();
