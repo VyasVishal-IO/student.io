@@ -7,7 +7,7 @@ import { AuthProvider } from '@/context/AuthContext';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Student.io - Educational Platform',
+  title: 'Student.io - Social media platform for students',
   description: 'A platform connecting students, teachers, mentors, and companies',
 };
 
