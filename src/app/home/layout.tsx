@@ -431,6 +431,7 @@ import {
 import CreatedPost from '@/components/content/CreatedPost';
 import CreatedProject from '@/components/content/CreatedProject';
 import { Post, Project } from '@/types/content';
+import Navbar from '@/components/Navbar';
 
 // Generic Empty State Component
 const EmptyState = ({ 
@@ -947,6 +948,16 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
           </Card>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+      <Navbar />
     </div>
   );
 }
