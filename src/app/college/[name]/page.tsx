@@ -260,14 +260,15 @@ export default function CollegePage() {
                   </Link>
                 )}
                 
-                {isAdmin && (
-                  <Link 
-                    href={`/college/${name}/manage`}
-                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700"
-                  >
-                    Manage College
-                  </Link>
-                )}
+                {/* Updated condition for "Manage College" button */}
+  {(isAdmin || (isTeacher && college?.teachers?.includes(user?.uid))) && (
+    <Link 
+      href={`/college/${name}/manage`}
+      className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700"
+    >
+      Manage College
+    </Link>
+  )}
               </div>
             </div>
           </div>
