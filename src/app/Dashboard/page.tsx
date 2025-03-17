@@ -13,10 +13,16 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { toast } from 'react-hot-toast';
 import Navbar from '@/components/Navbar';
+import JoinedCollegesSection from '@/components/college/JoinedCollegesSection';
+import { StudentProfile } from '@/types/user';
+import { useAuth } from '@/context/AuthContext';
 
 const Page = () => {
   const [user, setUser] = useState(null);
   const router = useRouter();
+  const { profile } = useAuth();
+
+   const studentProfile = profile as StudentProfile;
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(user => {
@@ -109,6 +115,10 @@ const Page = () => {
 
 
       </div>
+          {/* Joined Colleges Section */}
+              <div className="mt-6">
+                <JoinedCollegesSection userId={profile?.uid} />
+              </div>
 
 
       <div className="h-18"></div>
